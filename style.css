@@ -13,20 +13,185 @@ The designs were created to the following widths:
 font-family: 'Hanken Grotesk', sans-serif;
 */
 
-  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 :root {
-    --light-red: hsl(0, 100%, 67%);
-    --orangey-yellow: hsl(39, 100%, 56%);
-    --green-teal: hsl(166, 100%, 37%);
-    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red: hsla(0, 100%, 88%);
+    --orangey-yellow: hsl(39, 100%, 87%);
+    --green-teal: hsl(166, 100%, 85%);
+    --cobalt-blue: hsl(234, 85%, 80%);
+
     --light-slate-blue: hsl(252, 100%, 67%);
     --light-royal-blue: hsl(241, 81%, 54%);
+
     --violet-blue: hsla(256, 72%, 46%, 1);
     --persian-blue: hsla(241, 72%, 46%, 0);
+
     --white: hsl(0, 0%, 100%);
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+body {
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.l-container {
+    width: 1440px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+}
+
+.l-container__left {
+    color: var(--pale-blue);
+    background-color: var(--light-royal-blue);
+    width: 370px;
+    height: 510px;
+    align-items: column;
+    border-radius: 55px;
+    text-align: center;
+}
+
+.l-container__left--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-container__left--circle {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    margin: 0 auto;
+}
+
+.percentage {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.ofThe {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l-container__left--congWord {
+    display: flex;
+    position: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.l-container__left--congrats {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.l-container__right {
+    background-color: var(--white);
+    width: 370px;
+    height: 510px;
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+}
+
+@media screen and (max-width: 768px) {
+    .l-container {
+        flex-direction: column;
+    }
+
+    .l-container__right {
+        margin-bottom: 25px;
+    }
+    .l-container__left {
+        margin-bottom: 25px;
+    }
+}
+
+.c-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 285px;
+    height: 55px;
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+}
+
+#item1 {
+    background-color: var(--light-red);
+}
+
+#item2 {
+    background-color: var(--orangey-yellow);
+}
+
+#item3 {
+    background-color: var(--green-teal);
+}
+
+#item4 {
+    background-color: var(--cobalt-blue);
+}
+
+.c-button {
+    width: 285px;
+    height: 55px;
+    border-radius: 55px;
+    text-decoration: none;
+    font-style: none;
+    background-color: var(--dark-gray-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+p {
+    color: var(--white);
+    font-size: 18px;
+}
+
+li {
+    display: flex;
+    column-gap: 10;
+}
+
+img {
+    margin: 10;
+}
